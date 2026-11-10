@@ -1,0 +1,145 @@
+/* Reset Basic */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffc0cb; /* Baseline background color */
+    color: #800000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Card Styles */
+.header-card, .form-card {
+    background-color: #fdfaf8;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(128, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease;
+}
+
+.header-card h1 {
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+    color: #800000;
+}
+
+.header-card p {
+    font-size: 0.95rem;
+    color: #5a1a1a;
+    margin-bottom: 16px;
+}
+
+.theme-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+}
+
+.btn-sm {
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    border: 1px solid #800000;
+    border-radius: 4px;
+    background: transparent;
+    color: #800000;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-sm:hover {
+    background: rgba(128, 0, 0, 0.1);
+}
+
+.form-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid #c9a0a0;
+    background-color: #ffffff;
+    color: #3a0a0a;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #a00404;
+}
+
+.hint-text {
+    font-size: 0.78rem;
+    color: #c62828;
+}
+
+.error-message {
+    font-size: 0.8rem;
+    color: #b71c1c;
+    min-height: 16px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #a00404;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 8px;
+}
+
+button[type="submit"]:hover {
+    background-color: #7a0303;
+}
+
+.success-banner {
+    margin-top: 20px;
+    padding: 14px;
+    background-color: #e8f6ee;
+    border: 1px solid #1b7e4f;
+    border-radius: 6px;
+    color: #14633a;
+}
+
+.hidden {
+    display: none;
+}
